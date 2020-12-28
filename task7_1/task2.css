@@ -1,0 +1,53 @@
+.version1_block_green {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.version1_block_blu {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+.version1_span_blu {
+    background-color: blue;
+}
+.version2_block_green {
+    width: 200px;
+    height: 200px;
+    display: table-cell;
+    vertical-align:middle;
+    background-color: green;
+}
+.version2_block_blu {
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+    margin: 0 auto;
+}
+.version3_block_green {
+    width: 200px;
+    background-color: green;
+    text-align: center;
+}
+.version3_span_blu {
+    background-color: blue;
+    display: inline-block;
+    margin: 84px 0;
+}
+.version4_block_green {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: relative;
+}
+.version4_span_blu {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
