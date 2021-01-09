@@ -1,9 +1,4 @@
-@media only screen and (max-width : 480px) {
-    .background_image{
-        background-image: url(./pexels-photo.jpg)
-    }
-}
-@media (min-width:320px){
+
 body {
     font-family: Roboto;
     margin: 0;
@@ -77,6 +72,7 @@ table {
     background-color: white;
     width:100%;
     min-width: 520px;
+    overflow-x: auto;
     table-layout: fixed;
     border-collapse: collapse;
     border-radius: 5px;
@@ -130,7 +126,7 @@ table {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.151);
     pointer-events: none;
     opacity: 0;
     width: auto;
@@ -145,8 +141,8 @@ table {
     left: 300px;
     right: 300px;
     bottom: 120px;
-    overflow-y: scroll;
     background-color: white;
+    border-radius: 5px;
 }
 .header_modal {
     display: flex;
@@ -169,6 +165,8 @@ table {
     padding: 10px;
     line-height: 1.5;
     text-align: justify;
+    overflow: auto;
+    height: 270px;
 }
 
 .button_program:active {
@@ -198,11 +196,13 @@ table {
 .tranings_feedbacks{
     background-color: white;
     margin: 10px;
-    padding: 30px
+    padding: 30px;
+    border-radius: 5px;
 }
 .feedbacks{
     display: flex;
     align-items: center;
+   
 }
 .round{
     width: 70px;
@@ -226,31 +226,36 @@ table {
     color: grey;
     margin: 10px 0
 }
+
+.feedback_more{
+    position: relative;
+}
+.feedback_more::after{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 70px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), #fff);
+    pointer-events: none;
+    content: '';
+}
 .wrapper_text_feedback{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-   
+    position: relative;
 }
 
-.wrapper_link{
-    order: 1;
-}
 .wrapper_link:hover{
     cursor: pointer;
     color: rgb(0, 0, 134);
 }
 .text_feedback{
-    height: 60px;
     overflow: hidden;
-    order: 0;
+    height: 90px;
     line-height: 1.5;
     margin-top: 0;
 }
-.link_more:hover, .wrapper_link:hover ~ .text_feedback{
-    height: auto;
-    transition: 0.2s;
-}
+
 .link_more{
 color: blue;
 margin-right: 10px;
@@ -263,6 +268,8 @@ margin-right: 10px;
     color: blue;
     margin-right: 10px;
     }
+
+
 
 footer {
     background-color: rgb(189, 189, 189);
@@ -279,6 +286,7 @@ footer {
 .iconki {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .iconki_F {
     width: 55px;
@@ -304,4 +312,8 @@ footer {
     background-image: url(./social-media-icons-css-sprite-1.png);
     background-position: -398px -60px;
 }
+@media only screen and (max-width : 480px) {
+    .background_image{
+        background-image: url(./pexels-photo.jpg);
+    }
 }
