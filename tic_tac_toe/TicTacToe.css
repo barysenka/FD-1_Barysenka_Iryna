@@ -1,0 +1,97 @@
+.Firstline {
+    display: flex;
+}
+.twoline {
+    display: flex;
+}
+.Threeline {
+    display: flex;
+}
+
+.Sell {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input.o_1_selector{
+    display: none;
+}
+input.x_1_selector{
+    display: none;
+}
+label.x_o_label{
+    cursor: pointer;
+    font-size: 50px;
+    margin: 10px;
+    opacity: 0.3;
+}
+.click_x{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(255, 5, 5);
+    font-size: 100px;
+    font-weight: bold;
+}
+input.x_1_selector:checked + .click_x{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label.o_1_label{
+    cursor: pointer;
+}
+.click_o{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(51, 5, 255);
+    font-size: 100px;
+    font-weight: bold;
+    
+}
+input.o_1_selector:checked + .click_o{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.victory_x {
+    display: none;
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    font-size: 200px;
+}
+
+/* x x x
+   _ _ _
+   _ _ _ */
+
+.Firstline > .Sell > input.x_1_selector:checked ~ .Firstline > .Sell > input.x_1_selector:checked .Firstline > .Sell > input.x_1_selector:checked ~
+.twoline ~
+.Threeline ~ .victory_x {
+    display: block;
+    
+
+
+
