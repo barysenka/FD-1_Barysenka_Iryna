@@ -8,14 +8,12 @@ header {
     background-color: black;
     padding: 15px;
 }
-header>a {
+header > a {
     color: white; 
     padding: 15px;
     text-decoration:none;
 }
-main{
-    background-color: rgb(189, 189, 189);
-}
+
 .background_image{
     display: flex;
     align-items: center; 
@@ -31,7 +29,7 @@ main{
     color: white;
     margin-left: 50px;
 }
-.h3{
+.h3_center{
     text-align: center;
 }
 .text{
@@ -41,7 +39,6 @@ main{
     line-height: 1.5;
 }
 .block_programs {
-    max-width: 1200px;
     margin: 0 10px;
 }
 .programs_button {
@@ -51,28 +48,29 @@ main{
     padding: 10px;
     text-decoration: none;
     border-radius: 5px;
-    width: 270px;
+    width: 25%;
     display:block;
     float: left;
     margin: 5px;
+    transition: 0.2s;
 }
 .programs_button:hover {
     box-shadow: 0px 3px 9px 0px rgba(50, 50, 48, 0.88);
-    transition: 0.2s;
     text-decoration: underline;
 }
-.block_programs>div {
+.block_programs > div {
     clear: both;
 }
 
 .table_margin {
     margin:0 10px 10px;
+    display: flex;
+    overflow-x: auto;
 }
 table {
     background-color: white;
     width:100%;
     min-width: 520px;
-    overflow-x: auto;
     table-layout: fixed;
     border-collapse: collapse;
     border-radius: 5px;
@@ -94,10 +92,10 @@ table {
     border-radius: 5px; 
     background-color: rgb(145, 211, 79); 
     box-shadow: 0 -3px rgb(121, 177, 66) inset;
+    transition: 0.2s;
 } 
 .button_record:hover {
     background-color:rgb(121, 177, 66);  
-    transition: 0.2s; 
 } 
 .button_record:active {
     background-color: rgb(62, 92, 33);  
@@ -113,11 +111,11 @@ table {
     border: 1px solid rgb(36, 33, 248); 
     border-radius: 5px;    
     color:rgb(36, 33, 248);
+    transition: 0.2s;
 } 
 .button_program:hover {
     background-color: rgb(207, 217, 250);  
     color: rgb(59, 15, 141);
-    transition: 0.2s;
 } 
 
 .modal{
@@ -127,13 +125,10 @@ table {
     right: 0;
     bottom: 0;
     background-color: rgba(128, 128, 128, 0.151);
-    pointer-events: none;
-    opacity: 0;
-    width: auto;
+    display: none;
 }
 .modal:target {
-    pointer-events: auto;
-    opacity: 1;
+    display:block;
 }
 .content_modal {
     position: absolute;
@@ -143,6 +138,7 @@ table {
     bottom: 120px;
     background-color: white;
     border-radius: 5px;
+    overflow: hidden;
 }
 .header_modal {
     display: flex;
@@ -152,21 +148,19 @@ table {
 .title_modal{
     font-size: 18px;
     font-weight: bold;
-    line-height: 1;
 }
 .close_modal{
     text-decoration: none;
     color: grey;
     font-size: 18px;
     font-weight: bold;
-    line-height: 1;
 }
 .body_modal {
     padding: 10px;
     line-height: 1.5;
     text-align: justify;
     overflow: auto;
-    height: 270px;
+    max-height: 300px;
 }
 
 .button_program:active {
@@ -232,13 +226,12 @@ table {
 }
 .feedback_more::after{
     position: absolute;
-    bottom: 100%;
+    bottom: 0;
     left: 0;
     right: 0;
     display: block;
     height: 70px;
     background: linear-gradient(to bottom, rgba(255,255,255,0), #fff);
-    pointer-events: none;
     content: '';
 }
 .wrapper_text_feedback{
@@ -269,8 +262,6 @@ margin-right: 10px;
     margin-right: 10px;
     }
 
-
-
 footer {
     background-color: rgb(189, 189, 189);
     margin: 50px 15px 10px ;
@@ -288,32 +279,37 @@ footer {
     align-items: center;
     flex-wrap: wrap;
 }
-.iconki_F {
+.iconki_size {
     width: 55px;
     height: 55px;
     background-image: url(./social-media-icons-css-sprite-1.png);
-    background-position: -58px -60px;
+}
+.iconki_F {
+   background-position: -58px -60px;
 }
 .iconki_g {
-    width: 55px;
-    height: 55px;
-    background-image: url(./social-media-icons-css-sprite-1.png);
-    background-position: -229px -60px;
+   background-position: -229px -60px;
 }
 .iconki_t {
-    width: 55px;
-    height: 55px;
-    background-image: url(./social-media-icons-css-sprite-1.png);
     background-position: -286px -60px;
 }
 .iconki_y {
-    width: 55px;
-    height: 55px;
-    background-image: url(./social-media-icons-css-sprite-1.png);
     background-position: -398px -60px;
 }
-@media only screen and (max-width : 480px) {
+
+@media (max-width : 480px) {
     .background_image{
         background-image: url(./pexels-photo.jpg);
+    }
+}
+@media (max-width : 1000px) {
+    .content_modal {
+        position: absolute;
+        top: 120px;
+        left: 100px;
+        right: 100px;
+        bottom: 300px;
+        overflow: hidden;
+        
     }
 }
