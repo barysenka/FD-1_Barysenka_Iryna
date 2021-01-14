@@ -126,6 +126,7 @@ table {
     bottom: 0;
     background-color: rgba(128, 128, 128, 0.151);
     display: none;
+    z-index: 1;
 }
 .modal:target {
     display:block;
