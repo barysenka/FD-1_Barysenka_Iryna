@@ -7,29 +7,73 @@ body {
 header {
     background-color: black;
     height: 60px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position:relative;  
 }
 
 .header-menu{
     height: 100%;
+    width: 100%;
     margin: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-menu__items > a {
+.header-menu__items > a, .burger__menu > a {
     color: white; 
     padding: 0 10px;
     text-decoration:none;
     font-size: 18px;
     transition: 1s;
 }
-.header-menu__items > a:hover{
+.header-menu__items > a:hover, .burger__menu > a:hover {
     text-decoration: underline;
-    font-size: 20px;
 }
-
+.burger__menu > a{
+    padding: 7px 0;
+}
+.burger{
+    display: none; 
+}
+.burger__icon{
+    color:white;
+}
+.burger__input{
+    display: none;
+}
+.burger_label{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+    margin-right: 5px;
+}
+.burger__menu{
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -300px;
+    right: 0;
+    left: 0;
+    height: 200px;
+    background-color: rgb(189, 189, 189);
+    padding-top: 35px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 1px 0px 6px  rgb(116, 116, 116);
+}
+.burger__input:checked ~ .burger__menu{
+    position: absolute;
+    top: 0;
+}
 .background_image{
     display: flex;
     align-items: center; 
@@ -328,5 +372,13 @@ footer {
         bottom: 300px;
         overflow: hidden;
         
+    }
+}
+@media (max-width : 400px) {
+    .header-menu{
+        display: none;
+    }
+    .burger{
+        display:block;
     }
 }
