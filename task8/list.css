@@ -1,0 +1,39 @@
+.version_1 {
+    width: 200px;
+    border: 1px solid blue;
+    margin: 5px;
+    padding: 3px;
+    list-style-position: inside;
+}
+.version_1:hover {
+    background-color: green;
+    border: 1px solid green;
+    cursor: pointer;
+    color: white;
+}
+.version_1:hover + .version_1 + .version_1 {
+    background-color: red;
+    border: 1px solid red;
+    cursor: pointer;
+    color: white;
+}
+.version_2 {
+    width: 200px;
+    border: 1px solid blue;
+    margin: 2px;
+    padding: 3px;
+    list-style-position: inside;
+}
+
+.version_2:hover {
+    background-color: green;
+    border: 1px solid green;
+    cursor: pointer;
+    color: white;
+}
+.version_2:hover ~ .version_2 {
+    background-color: red;
+    border: 1px solid red;
+    cursor: pointer;
+    color: white;
+}
