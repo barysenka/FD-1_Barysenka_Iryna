@@ -1,0 +1,168 @@
+body {
+    font-family: Roboto;
+    margin: 0;
+    background-color: rgb(189, 189, 189);
+}
+header {
+    background-color: black;
+    padding: 15px;
+}
+header > a {
+    color: white; 
+    padding: 15px;
+    text-decoration:none;
+}
+
+.background_image{
+    display: flex;
+    align-items: center; 
+    height: calc(100vh - 50px); 
+    background-image: url(https://images.pexels.com/photos/583846/pexels-photo-583846.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1700);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.text_image{
+    font-size: 70px;
+    color: white;
+    margin-left: 50px;
+}
+.h3_center{
+    text-align: center;
+}
+.text{
+    text-align: justify;
+    text-indent: 30px;
+    margin: 0 10px;
+}
+.block_tab {
+ 
+    margin: 0 10px;
+}
+.button_tab {
+    color: rgb(36, 33, 248);
+    background-color: white;
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 25%;
+    display:block;
+    float: left;
+    margin: 5px;
+}
+.button_tab:hover {
+    box-shadow: 0px 3px 9px 0px rgba(50, 50, 48, 0.88);
+    transition: 0.2s;
+    text-decoration: underline;
+}
+.block_tab > div {
+    clear: both;
+}
+.table_margin {
+    margin:0 10px 10px;
+}
+table {
+    background-color: white;
+    width:100%;
+    min-width: 520px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+.row_table {
+    padding: 7px 0 7px 10px;
+}
+.solid {
+    border-top: 1px solid grey;
+}
+.button_record {
+    display: block;
+    text-decoration: none;
+    text-align: center; 
+    padding: 5px 0px; 
+    margin: 10px 10px 3px 30px;
+    width: 150px;
+    color: white;
+    border-radius: 5px; 
+    background-color: rgb(145, 211, 79); 
+    box-shadow: 0 -3px rgb(121, 177, 66) inset;
+} 
+.button_record:hover {
+    background-color:rgb(121, 177, 66);  
+    transition: 0.2s; 
+} 
+.button_record:active {
+    background-color: rgb(62, 92, 33);  
+    box-shadow: 0 3px rgb(62, 92, 33) inset;
+} 
+.button_program {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 0px;
+    margin:3px 10px 10px 30px;
+    width: 150px;
+    border: 1px solid rgb(36, 33, 248); 
+    border-radius: 5px;    
+    color:rgb(36, 33, 248);
+    transition: 0.2s;
+} 
+.button_program:hover {
+    background-color: rgb(207, 217, 250);  
+    color: rgb(59, 15, 141);
+} 
+.button_program:active {
+    background-color: rgb(83, 123, 255); 
+    color: white; 
+} 
+.course {
+    text-decoration: none;
+    color: rgb(36, 33, 248);
+} 
+.course:hover {
+    color: rgb(28, 6, 80);
+} 
+.date {
+    margin: 5px 0;
+}
+.bold {
+    font-weight:bold
+}
+.column_width {
+    width: 200px;
+}
+footer {
+    background-color: rgb(189, 189, 189);
+    margin: 50px 15px 10px ;
+    display: flex;
+    justify-content: space-between;
+}
+.text_block_footer {
+    display: flex;
+}
+.text_footer {
+    margin:10px 15px;
+}
+.iconki {
+    display: flex;
+    align-items: center;
+}
+.iconki_size {
+    width: 55px;
+    height: 55px;
+    background-image: url(./social-media-icons-css-sprite-1.png);
+}
+.iconki_F {
+    background-position: -58px -60px;
+}
+.iconki_g {
+    background-position: -229px -60px;
+}
+.iconki_t {
+    background-position: -286px -60px;
+}
+.iconki_y {
+    background-position: -398px -60px;
+}
