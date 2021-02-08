@@ -1,0 +1,95 @@
+.wrap{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: 320px 320px 320px;
+    grid-auto-rows: 320px;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+}
+
+.card-menu_big-row{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.card-menu{
+    border-radius: 3px;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.description{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 150px;
+    background-color: rgba(0, 128, 0, 0.61);
+    transition: 0.5s;
+    color: white;
+    padding: 10px;
+}
+
+.card-menu__img{
+    height: 180px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    background-color: rgb(236, 236, 236); 
+}
+
+.card-menu__img > img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-menu__item{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title > span {
+    color: #84BD2B;
+}
+
+.title:hover{
+    color: #608821;
+    cursor: pointer;
+}
+
+.title:hover ~ .description{
+  opacity: 1;  
+}
+
+.card-menu__button > button{
+   padding: 10px;
+    border-radius: 5px;
+    background-color: #84BD2B;
+    width: 100%;
+    color: white;
+    border: none;
+    cursor: pointer;   
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.card-menu__button{
+    margin: 10px;
+    cursor: pointer;   
+}
+
+.card-menu__button > button:hover{
+    background-color: #587c1d;  
+}
+@media (max-width : 540px) {
+    .card-menu_big-row{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
