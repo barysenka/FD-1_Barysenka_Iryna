@@ -85,7 +85,7 @@
 
 // ***Task7
 
-// let num = +prompt();
+// let num = +prompt('enter a number between 0 and 100');
 // if (num < 10){
 //     alert (num);
 // } else if ( num >= 10 && num < 100){
