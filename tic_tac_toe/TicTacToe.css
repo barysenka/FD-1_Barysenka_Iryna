@@ -1,0 +1,307 @@
+.line {
+    display: flex;
+}
+.Table {
+    position: relative;
+}
+
+.Sell {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input.o_1_selector{
+    display: none;
+}
+input.x_1_selector{
+    display: none;
+}
+label.x_o_label{
+    cursor: pointer;
+    font-size: 50px;
+    margin: 10px;
+    opacity: 0.3;
+}
+.click_x{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(255, 5, 5);
+    font-size: 100px;
+    font-weight: bold;
+}
+#x_1:checked ~ .line > .Sell > [for="x_1"] ~ .click_x, 
+#x_2:checked ~ .line > .Sell > [for="x_2"] ~ .click_x, 
+#x_3:checked ~ .line > .Sell > [for="x_3"] ~ .click_x,
+#x_4:checked ~ .line > .Sell > [for="x_4"] ~ .click_x, 
+#x_5:checked ~ .line > .Sell > [for="x_5"] ~ .click_x, 
+#x_6:checked ~ .line > .Sell > [for="x_6"] ~ .click_x,
+#x_7:checked ~ .line > .Sell > [for="x_7"] ~ .click_x, 
+#x_8:checked ~ .line > .Sell > [for="x_8"] ~ .click_x, 
+#x_9:checked ~ .line > .Sell > [for="x_9"] ~ .click_x {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label.o_1_label{
+    cursor: pointer;
+}
+.click_o{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(51, 5, 255);
+    font-size: 100px;
+    font-weight: bold;  
+}
+
+#o_1:checked ~ .line > .Sell > [for="o_1"] ~ .click_o, 
+#o_2:checked ~ .line > .Sell > [for="o_2"] ~ .click_o, 
+#o_3:checked ~ .line > .Sell > [for="o_3"] ~ .click_o,
+#o_4:checked ~ .line > .Sell > [for="o_4"] ~ .click_o, 
+#o_5:checked ~ .line > .Sell > [for="o_5"] ~ .click_o, 
+#o_6:checked ~ .line > .Sell > [for="o_6"] ~ .click_o,
+#o_7:checked ~ .line > .Sell > [for="o_7"] ~ .click_o, 
+#o_8:checked ~ .line > .Sell > [for="o_8"] ~ .click_o, 
+#o_9:checked ~ .line > .Sell > [for="o_9"] ~ .click_o {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.victory_x {
+    display: none;
+    position: fixed;
+    top: 9px;
+    left: 9px;
+    right: 0;
+    bottom: 0;
+    width: 305px;
+    height: 305px;
+    background-color: red;
+    font-size: 200px;
+}
+
+.victory_o {
+    display: none;
+    position: fixed;
+    top: 9px;
+    left: 9px;
+    right: 0;
+    bottom: 0;
+    width: 305px;
+    height: 305px;
+    background-color: blue;
+    font-size: 200px;
+}
+.button_Start{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button_Start > a {
+    background-color: yellow;
+    border-radius: 5px;   
+    text-decoration: none;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: center; 
+}
+
+/* x x x
+   _ _ _
+   _ _ _ */
+
+#x_1:checked ~ #x_2:checked ~ #x_3:checked ~ .victory_x{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* - - -
+   x x x
+   - - - */
+
+   #x_4:checked ~ #x_5:checked ~ #x_6:checked ~ .victory_x {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* - - -
+   - - -
+   x x x */
+
+   #x_7:checked ~ #x_8:checked ~ #x_9:checked ~ .victory_x {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* x - -
+   x - -
+   x - - */
+
+   #x_1:checked ~ #x_4:checked ~ #x_7:checked ~ .victory_x {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* - x -
+   - x -
+   - x - */
+
+   #x_2:checked ~ #x_5:checked ~ #x_8:checked ~ .victory_x {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* - - x
+   - - x
+   - - x */
+
+   #x_3:checked ~ #x_6:checked ~ #x_9:checked ~ .victory_x {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* x - -
+   - x -
+   - - x */
+
+   #x_1:checked ~ #x_5:checked ~ #x_9:checked ~ .victory_x {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* - - x
+   - x -
+   x - - */
+
+   #x_3:checked ~ #x_5:checked ~ #x_7:checked ~ .victory_x {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* o o o
+   _ _ _
+   _ _ _ */
+
+   #o_1:checked ~ #o_2:checked ~ #o_3:checked ~ .victory_o {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* - - -
+   o o o
+   - - - */
+
+   #o_4:checked ~ #o_5:checked ~ #o_6:checked ~ .victory_o {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* - - -
+   - - -
+   o o o */
+
+   #o_7:checked ~ #o_8:checked ~ #o_9:checked ~ .victory_o {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* o - -
+   o - -
+   o - - */
+
+   #o_1:checked ~ #o_4:checked ~ #o_7:checked ~ .victory_o {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* - o -
+   - o -
+   - o - */
+
+   #o_2:checked ~ #o_5:checked ~ #o_8:checked ~ .victory_o {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* - - o
+   - - o
+   - - o */
+
+   #o_3:checked ~ #o_6:checked ~ #o_9:checked ~ .victory_o {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* o - -
+   - o -
+   - - o */
+
+   #o_1:checked ~ #o_5:checked ~ #o_9:checked ~ .victory_o {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* - - o
+   - o -
+   o - - */
+
+   #o_3:checked ~ #o_5:checked ~ #o_7:checked ~ .victory_o {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    
+
+
+
