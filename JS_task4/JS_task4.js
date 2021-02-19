@@ -29,7 +29,7 @@
 // let isPrime = false;
 // let arr = [4, 2, 3, 5, 3, 2, 4];
 // let n = arr.length - 1;
-// for (let i = 0; i < arr.length; i++){
+// for (let i = 0; i < arr.length/2; i++){
 //      if (arr[i] !== arr[n - i]){
 //         isPrime = false;
 //         break;
@@ -81,11 +81,11 @@
 // let positionMax = 0;
 // let sum = 0;
 // for (let i = 0; i < num.length; i++){
-//     if (min > +num[i]){
-//         min = +num[i]; 
+//     if (min > num[i]){
+//         min = num[i]; 
 //         positionMin = i;    
 //     } else if (max < +num[i]){
-//         max = +num[i]; 
+//         max = num[i]; 
 //         positionMax = i;    
 //     }
 // }
@@ -166,15 +166,33 @@
 
 // // ***Task10 не работатет
 
-let arr = [2, 5, -9, 2, -5, 10, 2, -2];
-let  maxSum = arr[0];
-let isWord = false;
-for(let i = 1; i < arr.length; i++){
-    if(arr[i] > 0 && !isWord){
-    maxSum = arr[i] + arr[i + 1];
-    isWord = true;
-    }
-    if (arr[i] < 0){
-    isWord = false;
-}
-}
+// let arr = [2, 5, -9, 2, -5, 10, 2, -2];
+// let  maxSum = arr[0];
+// let isWord = false;
+// for(let i = 1; i < arr.length; i++){
+//     if(arr[i] > 0 && !isWord){
+//     maxSum = arr[i] + arr[i + 1];
+//     isWord = true;
+//     }
+//     if (arr[i] < 0){
+//     isWord = false;
+// }
+// }
+
+
+// function getMax (arr) {
+//     let max = arr[0];
+//     for (let i = 0; i < arr.length; i++){
+//         if (max < arr[i]){
+//             max = arr[i]; 
+//         }
+//     }
+//     return max;
+// }
+// let arr2 = [1, 3, 4, 8, 2, 9];
+// let arr3 = [1, 3, 4, 8, 2, 2];
+
+// console.log(getMax(arr2));
+// console.log(getMax(arr3));
+
+
