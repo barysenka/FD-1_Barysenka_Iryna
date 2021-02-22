@@ -1,5 +1,4 @@
 
-
 // // ***Task1
 
 
@@ -46,17 +45,17 @@
 
 // // ***Task3
 
-// let arr = [1, 4, 8, 3, 1, 3, 4, 7, 7];
+// let arr = [8, 3, 1, 7, 4, 7, 5, 4, 3, 6];
 // let newArr = [];
-
 // for (let i = 0; i < arr.length; i++){
-//     for (let j = i + 1; j < arr.length; j++){
-//     if (arr[i] === arr[j]){
+//     for (let j = i; j < arr.length; j++){
+//         if (arr[i] === arr[j + 1]){
 //         newArr.push(arr[i]);
-//     }
-//     }
-// }
+//         }
+//     }  
+// }  
 // console.log(newArr);
+
 
 
 // // ***Task4
@@ -104,15 +103,29 @@
 
 // // ***Task6
 
-// let arr = [1, 3, 1, 2, 2, 5, 2, 5, 3, 2, 5, 3];
-// let max = arr[0];
+// let arr = [1, 3, 1, 2, 2, 5, 2, 5, 3, 1, 5, 1];
+
+// let arr2 = [];
 
 // for (let i = 0; i < arr.length; i++){
-//     if (arr[i] === arr[i + 1]){
-//         max = arr[i];
+//     if (arr2[arr[i]]) {
+//       arr2[arr[i]]++;
+//     } else {
+//       arr2[arr[i]] = 1;
 //     }
 // }
-// console.log(max);
+
+// let max = arr2[0];
+// let maxIndex = 0;
+
+
+// for(let i = 0; i < arr2.length; i++) {
+//   if (arr2[i] > max || max === undefined) {
+//       max = arr2[i];
+//       maxIndex = i;
+//   }
+// }
+// console.log(maxIndex);
 
 
 
@@ -145,6 +158,7 @@
 // }
 // console.log(newArr);
 
+
 // // ***Task9
 
 // let arr = [4, -5, 2,- 4, -2, 2, 1, 5];
@@ -164,35 +178,20 @@
 
 
 
-// // ***Task10 не работатет
+// // ***Task10 
 
 // let arr = [2, 5, -9, 2, -5, 10, 2, -2];
-// let  maxSum = arr[0];
-// let isWord = false;
-// for(let i = 1; i < arr.length; i++){
-//     if(arr[i] > 0 && !isWord){
-//     maxSum = arr[i] + arr[i + 1];
-//     isWord = true;
+
+//  let maxSum = 0; 
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let sumFixedStart = 0;
+//     for (let j = i; j < arr.length; j++) {
+//       sumFixedStart += arr[j];
+//       maxSum = Math.max(maxSum, sumFixedStart);
 //     }
-//     if (arr[i] < 0){
-//     isWord = false;
-// }
-// }
+//   }
+// console.log(maxSum)
 
-
-// function getMax (arr) {
-//     let max = arr[0];
-//     for (let i = 0; i < arr.length; i++){
-//         if (max < arr[i]){
-//             max = arr[i]; 
-//         }
-//     }
-//     return max;
-// }
-// let arr2 = [1, 3, 4, 8, 2, 9];
-// let arr3 = [1, 3, 4, 8, 2, 2];
-
-// console.log(getMax(arr2));
-// console.log(getMax(arr3));
 
 
