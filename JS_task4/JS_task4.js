@@ -45,16 +45,16 @@
 
 // // ***Task3
 
-let arr = [8, 3, 1, 7, 4, 7, 5, 4, 3, 6];
+// let arr = [8, 3, 1, 7, 4, 7, 5, 4, 3, 6];
 
-for (let i = 0; i < arr.length; i++){
-    for (let j = i + 1 ; j < arr.length; j++){
-        if (arr[i] === arr[j]){
-        arr.splice(j, 1);
-        }
-    }  
-}  
-console.log(arr);
+// for (let i = 0; i < arr.length; i++){
+//     for (let j = i + 1 ; j < arr.length; j++){
+//         if (arr[i] === arr[j]){
+//         arr.splice(j, 1);
+//         }
+//     }  
+// }  
+// console.log(arr);
 
 
 
