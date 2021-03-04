@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./TraningPageForm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById("password1").onchange = validatePassword;
+            document.getElementById("password2").onchange = validatePassword;
+        }
+        function validatePassword(){
+        var pass2=document.getElementById("password2").value;
+        var pass1=document.getElementById("password1").value;
+        if(pass1!=pass2)
+            document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+        else
+            document.getElementById("password2").setCustomValidity('');
+        //empty string means no validation error
+        }
+        </script>
+</head>
+
+<body>
+    <div class="limiter">
+        <input type="radio" name="tabs-items" id="tabs-login" checked>
+        <input type="radio" name="tabs-items" id="tabs-registration">
+            <div class="tabs-content">
+                    <label for="tabs-login" class="tabs-items">Login</label>
+                    <label for="tabs-registration" class="tabs-items">Registration</label>
+            </div>
+      
+        <div class="login-wrap">
+            <div class="login-block">
+                <h1>LOGIN</h1>
+                <form action="#" class="login-form">
+                    <div class="login-form__items">
+                        <label>
+                            <div>Email</div>
+                            <input type="email">
+                        </label>
+                    </div>
+                    <div class="login-form__items">
+                        <label>
+                            <div>Password</div>
+                            <input type="password" required minlength="4" maxlength="10">
+                        </label>
+                    </div>
+                    <div class="login-form__button">
+                        <button type="submit">login</button>
+                        <button type="reset">reset</button>
+                    </div>
+                    <div> Don’t have an account? 
+                        <a href="#" class="sign">Sign Up</a>
+                    </div>
+                    <div class="iconki">
+                        <div class="iconki_F"></div>
+                        <div class="iconki_t"></div>
+                        <div class="iconki_g"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+            
+        <div class="registration-wrap">   
+            <div class="login-block">
+                <h1>REGISTRATION</h1>
+                <form action="#" class="login-form">
+                    <div class="login-form__items">
+                        <label >
+                            <div> Name </div>
+                            <input type="text" pattern="[A-Za-zА-Яа-яЁё](1,)" required >
+                        </label>
+                    </div>
+                    <div class="login-form__items">
+                        <label >    
+                            <div>Surname</div>
+                            <input type="text" pattern="[A-Za-zА-Яа-яЁё](1,)" required>
+                        </label>
+                    </div>
+                    <div class="login-form__items">
+                        <label >
+                            <div> Email</div>
+                            <input type="email" required>
+                        </label>
+                    </div>
+                    <div class="login-form__items">
+                        <label >
+                            <div>Password</div>
+                            <input type="password" id="password1" required minlength="4" maxlength="10">
+                        </label>
+                    </div>
+                    <div class="login-form__items">
+                        <label >
+                            <div>Repeat password</div>
+                            <input type="password" id="password2" required minlength="4" maxlength="10">
+                        </label>
+                    </div>
+                    <div class="login-form__items">
+                        <label >
+                            <div>Birthday date</div>
+                            <input type="date">
+                        </label>
+                    </div>
+                    <div class="login-form__items">
+                        <label >
+                            <div>Eye color</div>
+                            <input type="color" checked>
+                        </label>
+                    </div>
+                    <div class="login-form__button">
+                        <button type="submit">login</button>
+                        <button type="reset">reset</button>
+                    </div> 
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
