@@ -54,36 +54,52 @@
 
 // // ***Task4
 
+// function getRandomArr (lenght){
+//   let arr = [];
+//   for (let i = 0; i < lenght; i++){
+//     arr.push(Math.floor(Math.random() * 10));
+//   }
+//   return arr;
+//   }
+//   console.log(getRandomArr(5));
+//   console.log(getRandomArr(7));
+//   console.log(getRandomArr(2));
+
 
 // // ***Task5
-function getSumFigure(num) {
-    let sum = 0;
-    let numStr = String(num);
+// function getSumFigure(num) {
+//     let sum = 0;
+//     let numStr = String(num);
   
-    for(let i = 0; i < numStr.length; i++) {
-      sum += Number(numStr[i]);
-    }
+//     for(let i = 0; i < numStr.length; i++) {
+//       sum += Number(numStr[i]);
+//     }
   
-  return sum;
-}
+//   return sum;
+// }
 
-console.log(getSumFigure(252511));
+// console.log(getSumFigure(252511));
 
 
 
 // // ***Task6
 
-function getGCD(a, b) {
-    const min = a < b ? a : b;
-    let gcd = 1;
+// function getGCD(a, b) {
+//     const min = a < b ? a : b;
+//     let gcd = 1;
   
-    for(let i = min; i > 0; i--) {
-      if (a % i === 0 && b % i === 0) {
-        gcd = i;
-        break;
-      }
-    }
+//     for(let i = min; i > 0; i--) {
+//       if (a % i === 0 && b % i === 0) {
+//         gcd = i;
+//         break;
+//       }
+//     }
   
-    return gcd;
-}
-console.log(getGCD(89, 12));
+//     return gcd;
+// }
+// console.log(getGCD(89, 12));
+
+
+// // ***Task7
+
+console.log(1/0);
