@@ -101,3 +101,35 @@
 
 
 // // ***Task7
+
+
+
+function getMaxIndex (arr){
+let arr2 = [];
+
+for (let i = 0; i < arr.length; i++){
+    if (arr2[arr[i]]) {
+      arr2[arr[i]]++;
+    } else {
+      arr2[arr[i]] = 1;
+    }
+}
+
+let max = arr2[0];
+let maxIndex = 0;
+
+
+for(let i = 0; i < arr2.length; i++) {
+  if (arr2[i] > max || max === undefined) {
+      max = arr2[i];
+      maxIndex = i;
+  }
+}
+return {
+    maxIndex,
+};
+}
+let arr = [1, 5, 1, 2, 5, 5, 2, 5, 3, 1, 5, 5];
+let arr1 = [2, 5, 6, 8, 6, 7, 3, 2, 2]
+console.log(getMaxIndex (arr));
+console.log(getMaxIndex (arr1));
