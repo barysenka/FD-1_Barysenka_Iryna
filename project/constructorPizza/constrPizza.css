@@ -1,0 +1,139 @@
+
+
+.const-wrap{
+    display: flex;
+    max-width: 100%;
+}
+
+.wrap-column{
+    flex: 0 1 50%;
+    padding: 0 10px;
+    margin: 10px 20px;
+    align-items: center;
+}
+.block-wrap > h1{
+    text-align: center;
+}
+
+.list-product{
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.list-product__head, .list-product__text{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+}
+.list-product__row{
+    background-color: rgb(238, 238, 238);
+    padding: 5px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.list-product__row:nth-of-type(2n){
+    background-color:white;
+    padding: 5px 0;
+}
+
+.list-product__row > img{
+    max-width: 50px;
+    margin: 0 15px;
+}
+
+.product-title {
+    flex: 0 1 55%;
+    margin: 0 5px;
+}
+
+.product-price{
+    flex: 0 1 15%;
+    margin: 0 5px;
+}
+
+.product-button{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e96b2c;
+    border-radius: 10px;
+    margin: 0 15px 0 10px;
+    padding: 10px 15px;
+    flex: 0 1 30%;
+} 
+
+.product-button:hover{
+   cursor: pointer;
+   background-color: #c4551d;
+}
+
+.creator-pizza{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.creator-pizza_relative{
+    max-width: 800px;
+    position: relative;
+    top: 0;  
+}
+.creator-pizza_relative > img{
+    max-width: 100%;
+}
+
+.const-wrap > input{
+    display: none;
+}
+
+.creator-pizza__img > img{
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    display: none;    
+}
+
+#tomatnaja_osnova:checked ~ .list-product > .list-product__row > [for="tomatnaja_osnova"],
+#slivochnaja_osnova:checked ~ .list-product > .list-product__row > [for="slivochnaja_osnova"],
+#peperoni:checked ~ .list-product > .list-product__row > [for="peperoni"],
+#tomatos:checked ~ .list-product > .list-product__row > [for="tomatos"],
+#ham:checked ~ .list-product > .list-product__row > [for="ham"],
+#kurochka:checked ~ .list-product > .list-product__row > [for="kurochka"],
+#krevetki:checked ~ .list-product > .list-product__row > [for="krevetki"],
+#perec:checked ~ .list-product > .list-product__row > [for="perec"],
+#griby:checked ~ .list-product > .list-product__row > [for="griby"],
+#mocarella:checked ~ .list-product > .list-product__row > [for="mocarella"] {
+    background-color:  #9e4011;
+}
+
+
+#tomatnaja_osnova:checked ~ .creator-pizza > .creator-pizza_relative > .creator-pizza__img > .tomatnaja_osnova,
+#slivochnaja_osnova:checked ~ .creator-pizza > .creator-pizza_relative > .creator-pizza__img > .slivochnaja_osnova,
+#peperoni:checked ~ .creator-pizza > .creator-pizza_relative > .creator-pizza__img > .peperoni,
+#tomatos:checked ~ .creator-pizza > .creator-pizza_relative > .creator-pizza__img > .tomatos,
+#ham:checked ~ .creator-pizza > .creator-pizza_relative > .creator-pizza__img > .ham,
+#kurochka:checked ~ .creator-pizza > .creator-pizza_relative > .creator-pizza__img > .kurochka,
+#krevetki:checked ~ .creator-pizza > .creator-pizza_relative > .creator-pizza__img > .krevetki,
+#perec:checked ~ .creator-pizza > .creator-pizza_relative > .creator-pizza__img > .perec,
+#griby:checked ~ .creator-pizza > .creator-pizza_relative > .creator-pizza__img > .griby,
+#mocarella:checked ~ .creator-pizza > .creator-pizza_relative > .creator-pizza__img > .mocarella {
+    display: block;
+}
+
+
+@media (max-width: 800px){
+    .const-wrap{
+        flex-wrap: wrap;
+    }
+    .wrap-column{
+        flex: 0 1 100%;
+        padding: 0 10px;
+        margin: 10px 20px;
+    
+    }
+}

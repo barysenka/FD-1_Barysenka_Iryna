@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Global/pizzaPage1.js">
+    <link rel="stylesheet" href="./constrPizza.css">
+    <link rel="stylesheet" href="../Global/pizzaPageCommon.css">
+</head>
+<body>
+    
+        <header>
+            <div class="header-container">
+                <a href="../mainPage/pizzaPage1.html" class="header-items logo">
+                    <img src="../Global/img/pizza-logo-image.png" alt="">
+                </a>
+                <div class ="header-items header-delivery">
+                    <div>Доставка c 10 00 до 20 00</div>
+                    <div>
+                        <img src="../Global/img/mobile-phone-8-16.png" alt="">
+                        <a href="tel: +375(29)1110000">+375(29)1110000</a>
+                    </div>
+                </div>
+                <div class="header-items header-cart">
+                    <a href="#shoppingCart">
+                    <img src="../Global/img/shopping-cart-32.png" alt="">
+                    </a>
+                    
+                    <div id="shoppingCart" class="modalShoppingCart">
+                        <div class="content_modalShoppingCart">
+                            <div class="header_modal">
+                                
+                                <a href="#close_modalShoppingCart" title="close" class="close_modal">x</a>
+                            </div>
+                            
+                            <div class="Limiter">
+
+                                <div class="shoppingCart_items_list">
+                                    <div class="shoppingCart_item_img">
+                                    <img src="../menuPage/pizza/Fermerskaya-1-486x348.jpg" alt="">
+                                    </div>
+                                    <div class="shoppingCart_item_name">Фирменная</div>
+                                    <div class="shoppingCart_items_controlls__wrap">
+                                        <div class="shoppingCart_item_price">16руб.</div>
+                                        <div class="shoppingCart_item_controlls">
+                                            <div class="controlls-btn">-</div>
+                                            <div>1</div>
+                                            <div class="controlls-btn">+</div>
+                                        </div>
+                                        <span class="material-icons">delete_outline</span>     
+                                    </div>
+                                </div>
+
+                                <div class="shoppingCart_items_list">
+                                    <div class="shoppingCart_item_img">
+                                    <img src="../menuPage/pizza/Gavajskaya-486x348.jpg" alt="">
+                                    </div>
+                                    <div class="shoppingCart_item_name">Гавайская</div>
+                                    <div class="shoppingCart_items_controlls__wrap">
+                                        <div class="shoppingCart_item_price">17руб.</div>
+                                        <div class="shoppingCart_item_controlls">
+                                            <div class="controlls-btn">-</div>
+                                            <div>1</div>
+                                            <div class="controlls-btn">+</div>
+                                        </div>
+                                        <span class="material-icons">delete_outline</span>     
+                                    </div>
+                                </div>
+
+                                <div class="shoppingCart_items_list">
+                                    <div class="shoppingCart_item_img">
+                                    <img src="../menuPage/calat/SalatBanzaj-486x348.jpg" alt="">
+                                    </div>
+                                    <div class="shoppingCart_item_name">Салат Банзай</div>
+                                    <div class="shoppingCart_items_controlls__wrap">
+                                        <div class="shoppingCart_item_price">11руб.</div>
+                                        <div class="shoppingCart_item_controlls">
+                                            <div class="controlls-btn">-</div>
+                                            <div>1</div>
+                                            <div class="controlls-btn">+</div>
+                                        </div>
+                                        <span class="material-icons">delete_outline</span>     
+                                    </div>
+                                </div>
+
+                                <div class="shoppingCart_items_list">
+                                    <div class="shoppingCart_item_img">
+                                    <img src="../menuPage/kola/LIMONAD+-486x348.jpg" alt="">
+                                    </div>
+                                    <div class="shoppingCart_item_name">Лимонад</div>
+                                    <div class="shoppingCart_items_controlls__wrap">
+                                        <div class="shoppingCart_item_price">4руб.</div>
+                                        <div class="shoppingCart_item_controlls">
+                                            <div class="controlls-btn">-</div>
+                                            <div>1</div>
+                                            <div class="controlls-btn">+</div>
+                                        </div>
+                                        <span class="material-icons">delete_outline</span>     
+                                    </div>
+                                </div>
+
+                                <hr>
+                                <div class="shoppingCart_items_bottom">
+                                    <div class="shoppingCart_items_sum">Сумма заказа <span>48руб.</span></div>
+                                    <button class="shoppingCart_items_buttom remove">Очистить корзину</button>
+                                    <button class="shoppingCart_items_buttom cart-btn">Оформить заказ</button>
+                                </div>
+                                                    
+                            </div>   
+                        </div>
+                    </div>
+
+
+                    <a href="#Go_modal">
+                    <img src="../Global/img/login-32.png" alt="">
+                    </a>
+
+                    <div id="Go_modal" class="modal">
+                        <div class="content_modal">
+                            <div class="header_modal">
+                                
+                                <a href="#close_modal" title="close" class="close_modal">x</a>
+                            </div>
+                            
+
+                            <div class="limiter">
+
+                            <input type="radio" name="tabs-items" id="tabs-login" checked>
+                            <input type="radio" name="tabs-items" id="tabs-registration">
+                                <div class="tabs-content">
+                                        <label for="tabs-login" class="tabs-items">Логин</label>
+                                        <label for="tabs-registration" class="tabs-items">Регистрация</label>
+                                </div>
+                      
+                                    <div class="login-wrap">
+                                        <div class="login-block">
+                                            <h1>ЛОГИН</h1>
+                                            <form action="#" class="login-form">
+                                                <div class="login-form__items">
+                                                    <label>
+                                                        <div>Email</div>
+                                                        <input type="email">
+                                                    </label>
+                                                </div>
+                                                <div class="login-form__items">
+                                                    <label>
+                                                        <div>Пароль</div>
+                                                        <input type="password" required minlength="4" maxlength="10">
+                                                    </label>
+                                                </div>
+                                                <div class="login-form__button">
+                                                    <button type="submit">Войти</button>
+                                                    <button type="reset">Сброс</button>
+                                                </div>
+                                               
+                                                
+                                            </form>
+                                        </div>
+                                    </div>
+                   
+                                    <div class="registration-wrap">   
+                                        <div class="login-block">
+                                            <h1>Регистрация</h1>
+                                            <form action="#" class="login-form">
+                                                <div class="login-form__items">
+                                                    <label >
+                                                        <div> Имя </div>
+                                                        <input type="text" pattern="[A-Za-zА-Яа-яЁё](1,)" required >
+                                                    </label>
+                                                </div>
+                                                <div class="login-form__items">
+                                                    <label >
+                                                        <div> Email</div>
+                                                        <input type="email" required>
+                                                    </label>
+                                                </div>
+                                                <div class="login-form__items">
+                                                    <label >
+                                                        <div>Пароль</div>
+                                                        <input type="password" id="password1" required minlength="4" maxlength="10">
+                                                    </label>
+                                                </div>
+                                                <div class="login-form__items">
+                                                    <label >
+                                                        <div>Повторите пароль</div>
+                                                        <input type="password" id="password2" required minlength="4" maxlength="10">
+                                                    </label>
+                                                </div>
+                                                <div class="login-form__items">
+                                                    <label >
+                                                        <div>Номер телефона</div>
+                                                        <input type="text" required >
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="login-form__button">
+                                                    <button type="submit">Войти</button>
+                                                    <button type="reset">Сброс</button>
+                                                </div> 
+                                            </form>
+                                        </div>
+                                    </div>
+                            </div>   
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="mobil">
+                    <div class="hamburger">
+                        <input type="checkbox" id="hamburger_menu">
+                        <label for="hamburger_menu" class="hamburger_button">
+                            <span></span>
+                        </label>
+                        <div class="hamburger-nav-menu">
+                            <div class="hamburger-nav-menu__items">                     
+                                    <div>
+                                        <a href="#">Конструктор пиццы</a>
+                                        <a href="../deliveryPage/deliveryPageHtml.html">Доставка</a>
+                                        <a href="../aboutPage/aboutPageHtml.html">О нас</a>
+                                        <a href="../contactPage/contactPageHtml.html">Контакты</a>
+                                    </div>
+                                    <div>
+                                        <a href="../menuPage/pizzaMenu.html">Пицца</a>
+                                        <a href="../menuPage/calatMenu.html">Салаты</a>
+                                        <a href="../menuPage/KolaMenu.html">Напитки</a>
+                                    </div> 
+                                </div> 
+                                    <div class ="hamburger-nav-menu__delivery">
+                                        <div>Доставка c 10 00 до 20 00</div>
+                                        <div>
+                                            <img src="./mobile-phone-8-16.png" alt="">
+                                            <a href="tel: +375(29)1110000">+375(29)1110000</a>
+                                        </div>
+                                    </div>                        
+                            </div>
+                        </div>
+                    </div>
+
+                
+            </div>
+        </header>
+        <main>
+            <div class="intro">
+                <video id="bgvideo" class="bgvideo" autoplay="" muted="" loop="">
+                    <source src="../Global/img/pizza ‐ Made with Clipchamp.mp4" type="video/mp4">
+                </video>
+                <div class="page-wrap"></div>
+
+                <div class="swiper-container">
+              
+                    <div class="swiper-wrapper">
+                
+                        <div class="swiper-slide">
+                            <div class="banner">
+                                <span class="banner__item-first">Закажи две пиццы</span>
+                                <span class="banner__item-color">ПОЛУЧИ ПИЦЦУ В ПОДАРОК</span>
+                                 <a href="../menuPage/pizzaMenu.html"> <button class="banner__item-button">Подробнее</button> </a>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="banner">
+                                <span class="banner__item-first">Доставка по г.Гомелю</span>
+                                <span class="banner__item-color">БЕСПЛАТНО!!!</span>
+                                <a href="../deliveryPage/deliveryPageHtml.html"><button class="banner__item-button">Подробнее</button></a>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide slider-banner">
+                            <div class="banner">
+                                <span class="banner__item-first">Собери свою пиццу</span>
+                                <span class="banner__item-color">ФАНТАЗИРУЙ!</span>
+                                <a href="../constructorPizza/constructorPizzaHtml.html"><button class="banner__item-button">Подробнее</button></a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
+                    
+                </div>
+            </div>
+            
+
+            <nav class="nav-menu-wrap">
+                <ul class="nav-menu">
+                    <li class="nav-menu-link">
+                    <a href="#">Меню </a>
+                        <ul class="sub-nav-menu">
+                            <li class="sub-nav-menu-link">
+                                <a href="../menuPage/pizzaMenu.html">Пицца</a>
+                            </li>
+                            <li class="sub-nav-menu-link">
+                                <a href="../menuPage/calatMenu.html">Салаты</a>
+                            </li>
+                            <li class="sub-nav-menu-link">
+                                <a href="../menuPage/KolaMenu.html">Напитки</a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    <li class="nav-menu-link">
+                        <a href="#">Конструктор пиццы</a>
+                    </li>
+                    <li class="nav-menu-link">
+                        <a href="../deliveryPage/deliveryPageHtml.html">Доставка</a>
+                    </li>
+                    <li class="nav-menu-link">
+                        <a href="../aboutPage/aboutPageHtml.html">О нас</a>
+                    </li>
+                    <li class="nav-menu-link">
+                        <a href="../contactPage/contactPageHtml.html">Контакты</a>  
+                    </li>             
+                </ul>
+            </nav>
+
+            
+
+            <div class="content-wrap">
+                <div class="block-wrap">
+                <h1>СОБЕРИ СВОЮ ПИЦЦУ</h1>
+                <div class="const-wrap">
+                    <input type="checkbox" class="creator-input" id="tomatnaja_osnova">
+                    <input type="checkbox" class="creator-input" id="slivochnaja_osnova">
+                    <input type="checkbox" class="creator-input" id="peperoni">
+                    <input type="checkbox" class="creator-input" id="ham">
+                    <input type="checkbox" class="creator-input" id="kurochka">
+                    <input type="checkbox" class="creator-input" id="krevetki">
+                    <input type="checkbox" class="creator-input" id="tomatos">
+                    <input type="checkbox" class="creator-input" id="perec">
+                    <input type="checkbox" class="creator-input" id="griby">
+                    <input type="checkbox" class="creator-input" id="mocarella">
+            
+            
+                    <div class="list-product wrap-column">
+                       
+                        <div class="list-product__text">Выберите размер пиццы</div>
+                        <div class="list-product__text">Добавьте любимые ингредиенты</div>
+                        
+                        <div class="list-product__row">
+                            <img src="./img/tomatnaja_osnova-50x50.png" alt="">
+                            <div class="product-title">Томатная основа</div>
+                            <div class="product-price">+2р.</div>
+                            <label for="tomatnaja_osnova" class="product-button">
+                                <span>Выбрать</span>
+                            </label>
+                            
+                        </div>
+                        <div class="list-product__row">
+                            <img src="./img/slivochnaja_osnova-50x50.png" alt="">
+                            <div class="product-title">Сливочная основа</div>
+                            <div class="product-price">+2р.</div>
+                            <label for="slivochnaja_osnova" class="product-button">
+                                <span>Выбрать</span>
+                            </label>
+                        </div>
+            
+                        <div class="list-product__row">
+                            <img src="./img/colbasa-vyl.png" alt="">
+                            <div class="product-title">Колбаса пепперони</div>
+                            <div class="product-price">+2р.</div>
+                            <label for="peperoni" class="product-button">
+                                <span>Выбрать</span>
+                            </label>
+                        </div>
+                        
+                        <div class="list-product__row">
+                            <img src="./img/vet.png" alt="">
+                            <div class="product-title">Ветчина</div>
+                            <div class="product-price">+2р.</div>
+                            <label for="ham" class="product-button">
+                                <span>Выбрать</span>
+                            </label>
+                        </div>
+            
+                        <div class="list-product__row">
+                            <img src="./img/Grydinka_Zapechena_z_pryano.png" alt="">
+                            <div class="product-title">Бекон</div>
+                            <div class="product-price">+2р.</div>
+                            <label for="kurochka" class="product-button">
+                                <span>Выбрать</span>
+                            </label>
+                        </div>
+            
+                        <div class="list-product__row">
+                            <img src="./img/krevetki.png" alt="">
+                            <div class="product-title">Креветки</div>
+                            <div class="product-price">+2р.</div>
+                            <label for="krevetki" class="product-button">
+                                <span>Выбрать</span>
+                            </label>
+                        </div>
+            
+                        <div class="list-product__row">
+                            <img src="./img/tomat.png" alt="">
+                            <div class="product-title">Помидор</div>
+                            <div class="product-price">+1.5р.</div>
+                            <label for="tomatos" class="product-button">
+                                <span>Выбрать</span>
+                            </label>
+                        </div>
+            
+                        <div class="list-product__row">
+                            <img src="./img/perec.png" alt="">
+                            <div class="product-title">Перец</div>
+                            <div class="product-price">+1.5р.</div>
+                            <label for="perec" class="product-button">
+                                <span>Выбрать</span>
+                            </label>
+                        </div>
+            
+                        <div class="list-product__row">
+                            <img src="./img/griby.png" alt="">
+                            <div class="product-title">Шампиньоны</div>
+                            <div class="product-price">+1.5р.</div>
+                            <label for="griby" class="product-button">
+                                <span>Выбрать</span>
+                            </label>
+                        </div>
+            
+                        <div class="list-product__row">
+                            <img src="./img/mocarella.png" alt="">
+                            <div class="product-title">Моцарелла</div>
+                            <div class="product-price">+1.5р.</div>
+                            <label for="mocarella" class="product-button">
+                                <span>Выбрать</span>
+                            </label>
+                        </div>
+            
+                    </div>
+            
+                    
+                    <div class="creator-pizza wrap-column">
+                        <div class="list-product__head">
+                            <div> Основа (тесто, соус, сыр моцарелла)</div>
+                            <div> для пиццы 32 см </div>
+                        </div>
+                        <div class="creator-pizza_relative">
+                            
+                            <img src="./img/main_pizza_creator-637x637.png" alt="">
+                       
+                            <div class="creator-pizza__img">
+                                <img src="./img/slivochnaja_osnova-800x800.png" class="creator-pizza__img slivochnaja_osnova" alt="">
+                                <img src="./img/tomatnaja_osnova-800x800.png" class="creator-pizza__img tomatnaja_osnova" alt="">
+                                <img src="./img/peperoni-800x800.png" class="creator-pizza__img peperoni" alt="">
+                                <img src="./img/tomatos-800x800.png" class="creator-pizza__img tomatos" alt="">
+                                <img src="./img/ham-800x800.png" class="creator-pizza__img ham" alt="">
+                                <img src="./img/becon-800x800.png" class="creator-pizza__img kurochka" alt="">
+                                <img src="./img/krevetki-800x800.png" class="creator-pizza__img krevetki" alt="">
+                                <img src="./img/shugar_pepper-800x800.png" class="creator-pizza__img perec" alt="">
+                                <img src="./img/Shampiniony-800x800.png" class="creator-pizza__img griby" alt="">
+                                <img src="./img/mocarella-800x800.png" class="creator-pizza__img mocarella" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            </div>
+        </main>
+        <footer>
+            
+            <div class="footer-wrap">
+                <div class="footer-block-top">
+                    <div class="footer-contact">
+                        <div>
+                            <span> Единый номер </span>
+                            <img src="../Global/img/mobile-phone-8-16.png" alt="">
+                            <a href="tel: +375(29)1110000">+375(29)1110000</a>
+                        </div>
+                        <div> 
+                            <span> Контактная почта</span>
+                        <a class="footer-mail" href="#">sss@gmail.com</a>
+                        </div>
+                        <div class="footer-social-network"> 
+                            <span></span>Страничка в инстаграм</span>
+                            <a href="#">
+                                <span class="footer-icons icons_ins"></span>
+                            </a>
+                        </div>
+                        <div class="footer-social-network"> 
+                            <span></span>Группа в ВК</span>
+                            <a href="#">
+                                <span class="footer-icons icons_vk"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__menu">
+                    <div class="footer__nav-menu">
+                        <a href="#">Конструктор пиццы</a>
+                        <a href="../deliveryPage/deliveryPageHtml.html">Доставка</a>
+                        <a href="../aboutPage/aboutPageHtml.html">О нас</a>
+                        <a href="../contactPage/contactPageHtml.html">Контакты</a>
+                    </div>
+                    <div class="footer__nav-menu">
+                        <a href="../menuPage/pizzaMenu.html">Пицца</a>
+                        <a href="../menuPage/calatMenu.html">Салаты</a>
+                        <a href="../menuPage/KolaMenu.html">Напитки</a>
+                    </div>
+                </div>
+             
+            </div>
+
+                <div class="footer-block-botton">
+                    <div class="footer-block-botton__info">
+                        <span> Информация на сайте носит справочный характер.</span>
+                        Интернет-магазин зарегистрирован в Торговом реестре Республики Беларусь 22.02.2021
+                    </div>
+                    <div class="footer-block-botton__cart">
+                        <img src="../Global/img/download.png" alt="">
+                        <img src="../Global/img/download (1).png" alt="">
+                        <img src="../Global/img/download (2).png" alt="">
+                        <img src="../Global/img/download (3).png" alt="">
+                        <img src="../Global/img/download (4).png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+   
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../Global/pizzaPage1.js"></script>
+</body>
+</html>

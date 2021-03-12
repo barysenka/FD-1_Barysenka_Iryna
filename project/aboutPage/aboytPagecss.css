@@ -1,0 +1,94 @@
+.intro {
+    width: 100%;
+    height: calc(100vh - 70px);
+    position: relative;
+}
+.bgvideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.page-wrap{
+    background-image: url(../Global/img/pitstsa-stol-black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.block-wrap > h1{
+    text-align: center;
+}
+
+.block-information{
+    display: flex;
+    }
+    .block-information__img{
+        background-image: url(../Global/img/Pizza-Free-Vector-Icons.png);
+        width: 150px;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .posit-uno{
+        background-position: 330px 0px;
+    }
+    .posit-two{
+        background-position: -190px -290px;
+    }
+    .posit-three{
+            background-position: 330px -150px;
+        }
+    .block-information__items{
+        flex: 0 1 30%;
+        margin: 20px;
+       text-align: center;
+    }
+    .hr{
+    background-color: #e96b2c;
+    width: 40px;
+    height: 3px;
+    margin: 10px auto;
+    
+    display: flex;
+    }
+
+    
+.block-contact__wrap{
+    justify-content: space-around;
+    display: flex;
+    align-content: space-between;
+    margin: 20px 0;
+}
+.block-contact{
+    padding: 10px;
+}
+.block-contact > div:nth-child(3) > a{
+   color: #e96b2c;
+}
+.block-contact > div:nth-child(3) > a:hover{
+    color: #af4814;
+ }
+.center{
+display: flex;
+flex-direction: column;
+}
+h1{
+    text-align: center;
+}
+
+@media (max-width : 610px) {
+    .block-contact__wrap{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
